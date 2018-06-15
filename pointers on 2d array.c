@@ -1,0 +1,17 @@
+#include<stdio.h>
+void main()
+{
+    int a[2][2]={(1,2),(3,4)};
+    int *p[2];
+    int i,j;
+    p=&a;
+    for(i=0;i<2;i++)
+    {
+        for(j=0;j<2;j++)
+        {
+            printf("\n%d",*(*(p+i)+j));
+           //  printf("\n%d",(*(a+i))[j]);
+             // printf("\n%d",*(p[i]+j));
+        }
+    }
+}
